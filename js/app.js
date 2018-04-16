@@ -40,6 +40,7 @@ Enemy.prototype.render = function() {
 // Checks if this enemy collides with the player using the algorithm from
 // https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
 Enemy.prototype.checkIfCollidesWithPlayer = function() {
+  //These two variables represents the area occupied by enemy and player
   var playerArea = {x: player.x, y: player.y, width: 50, height: 40};
   var enemyArea = {x: this.x, y: this.y, width: 60, height: 70};
   // Check for collisions, if playerBox intersects enemyBox, we have one
