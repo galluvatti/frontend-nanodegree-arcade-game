@@ -4,7 +4,6 @@
 
 * [Instructions](#instructions)
 * [Game logic](#logic)
-* [Implementation technical details](#details)
 
 ## Instructions
 
