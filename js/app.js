@@ -107,11 +107,11 @@ Enemy.prototype.checkIfCollidesWithPlayer = function() {
   const player = new Player();
   const allEnemies = [
     new Enemy(0, 50.5, Math.random()*10+1),
-    new Enemy(-300, 50.5 + 83, Math.random()*10+1),
-    new Enemy(-600, 50.5 + 83, Math.random()*10+1),
-    new Enemy(-200, 50.5 + 83*2, Math.random()*10+1),
-    new Enemy(-400, 50.5 + 83*3, Math.random()*10+1),
-    new Enemy(-600, 50.5 + 83, Math.random()*10+1),
+    new Enemy(-300, 50.5 + 83, Math.random()*10 + 1),
+    new Enemy(-600, 50.5 + 83, Math.random()*10 + 1),
+    new Enemy(-200, 50.5 + 83*2, Math.random()*10 + 1),
+    new Enemy(-400, 50.5 + 83*3, Math.random()*10 + 1),
+    new Enemy(-600, 50.5 + 83, Math.random()*10 + 1),
   ];
 
 
