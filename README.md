@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
-* [Game logic](#logic)
+* [Instructions](#Instructions)
+* [Game logic](#Game logic)
 
 ## Instructions
 
