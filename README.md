@@ -3,7 +3,7 @@
 ## Table of Contents
 
 * [Instructions](#Instructions)
-* [Game logic](#Game logic)
+* [Game logic](#logic)
 
 ## Instructions
 
