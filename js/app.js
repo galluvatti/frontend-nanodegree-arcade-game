@@ -1,3 +1,4 @@
+"use strict;”
 // Enemies our player must avoid
 var Enemy = function(x, y, speed) {
   // The image/sprite for our enemies, this uses
@@ -21,16 +22,6 @@ Enemy.prototype.update = function(dt) {
     this.x = this.startingX;
   }
 };
-
-//Returns x coordinate of the enemy
-Enemy.prototype.getX = function() {
-  return this.x;
-}
-
-//Returns x coordinate of the enemy
-Enemy.prototype.getY = function() {
-  return this.y;
-}
 
 // Draw the enemy on the screen, required method for game
 Enemy.prototype.render = function() {
@@ -82,8 +73,10 @@ Enemy.prototype.checkIfCollidesWithPlayer = function() {
     switch (direction) {
       case 'up':
       this.y = this.y - 83;
-      if(this.y < 0)
-      this.reset();
+      if(this.y+83 < 0) {
+        alert("You won");
+        this.reset();
+      }
       break;
       case 'down':
       if(this.y + 83 <= 373.5)
@@ -109,10 +102,8 @@ Enemy.prototype.checkIfCollidesWithPlayer = function() {
   const allEnemies = [
     new Enemy(0, 50.5, Math.random()*10+1),
     new Enemy(-300, 50.5 + 83, Math.random()*10 + 1),
-    new Enemy(-600, 50.5 + 83, Math.random()*10 + 1),
     new Enemy(-200, 50.5 + 83*2, Math.random()*10 + 1),
-    new Enemy(-400, 50.5 + 83*3, Math.random()*10 + 1),
-    new Enemy(-600, 50.5 + 83, Math.random()*10 + 1),
+    new Enemy(-400, 50.5 + 83*3, Math.random()*10 + 1)
   ];
 
 
